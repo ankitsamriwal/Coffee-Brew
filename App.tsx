@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import IntroAnimation from './components/IntroAnimation';
 import BrewingRatioCard from './components/BrewingRatioCard';
+import WorldCoffeeMap from './components/WorldCoffeeMap';
 import { COFFEE_DRINKS, BEAN_INFO, HISTORY_TIMELINE, HEALTH_BENEFITS } from './constants';
 import { getDailyCoffeeWisdom } from './geminiService';
 import { DailyWisdom } from './types';
@@ -36,6 +37,7 @@ const App: React.FC = () => {
               <a href="#brewing" className="hover:text-[#2D241E] transition-colors">Brewing</a>
               <a href="#beans" className="hover:text-[#2D241E] transition-colors">Beans</a>
               <a href="#history" className="hover:text-[#2D241E] transition-colors">History</a>
+              <a href="#world-map" className="hover:text-[#2D241E] transition-colors">World Map</a>
               <a href="#health" className="hover:text-[#2D241E] transition-colors">Wellness</a>
             </div>
           </nav>
@@ -162,6 +164,9 @@ const App: React.FC = () => {
               </div>
             </div>
           </section>
+
+          {/* World Coffee Map */}
+          <WorldCoffeeMap />
 
           {/* Health Benefits */}
           <section id="health" className="py-24 px-6 bg-white border-t border-gray-100">

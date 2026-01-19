@@ -43,6 +43,27 @@ export const COFFEE_DRINKS: CoffeeDrink[] = [
     description: 'An espresso coffee drink with a small amount of milk, usually foamed. Macchiato means "stained".',
     ratio: { espresso: 1, foam: 0.5 },
     image: 'https://images.unsplash.com/photo-1542289932-a39c9f0298a0?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 'flat-white',
+    name: 'Flat White',
+    description: 'An Australian/New Zealand specialty with velvety microfoam and a higher coffee-to-milk ratio than a latte.',
+    ratio: { espresso: 2, milk: 2, foam: 0.25 },
+    image: 'https://images.unsplash.com/photo-1619681118523-88e6b00b5ade?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 'cortado',
+    name: 'Cortado',
+    description: 'Spanish espresso cut with equal parts warm milk. Perfectly balanced between bold and smooth.',
+    ratio: { espresso: 1, milk: 1 },
+    image: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?q=80&w=800&auto=format&fit=crop'
+  },
+  {
+    id: 'mocha',
+    name: 'Caffè Mocha',
+    description: 'A chocolate-flavored variant of a latte, combining espresso, chocolate, steamed milk, and foam.',
+    ratio: { espresso: 1, milk: 2, foam: 0.5 },
+    image: 'https://images.unsplash.com/photo-1578374173705-0ec3d2fa54f9?q=80&w=800&auto=format&fit=crop'
   }
 ];
 
@@ -69,7 +90,10 @@ export const HISTORY_TIMELINE: HistoryEvent[] = [
   { year: '1100', title: 'Cultivation in Arabia', description: 'Coffee beans are first roasted and brewed in Arabia.' },
   { year: '1475', title: 'First Coffee Shop', description: 'Kiva Han, the world\'s first coffee shop, opens in Constantinople.' },
   { year: '1600', title: 'Arrival in Europe', description: 'Coffee enters Europe through Venice. Pope Clement VIII baptizes it.' },
-  { year: '1723', title: 'The Americas', description: 'Gabriel de Clieu brings a coffee plant to Martinique, the ancestor of most coffee in the Americas.' }
+  { year: '1675', title: 'London Coffee Houses', description: 'London\'s coffee houses become centers of social activity and are nicknamed "penny universities".' },
+  { year: '1723', title: 'The Americas', description: 'Gabriel de Clieu brings a coffee plant to Martinique, the ancestor of most coffee in the Americas.' },
+  { year: '1901', title: 'Instant Coffee', description: 'Japanese-American chemist Satori Kato invents instant coffee in Chicago.' },
+  { year: '1971', title: 'Starbucks Opens', description: 'The first Starbucks store opens in Seattle\'s Pike Place Market, revolutionizing coffee culture.' }
 ];
 
 export const HEALTH_BENEFITS = [
